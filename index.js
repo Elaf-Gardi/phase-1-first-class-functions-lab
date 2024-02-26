@@ -20,15 +20,13 @@ function createFareMultiplier(a){
     }
 }
 
-function fareDoubler(x){
-    return x * 2
-}
-console.log(fareDoubler(10))
+const fareDoubler = createFareMultiplier(2)
+const doubledFare = fareDoubler(10)
+console.log(doubledFare)
 
-function fareTripler(x){
-    return x * 3 
-}
-console.log(fareTripler(12))
+const fareTripler = createFareMultiplier(3)
+const tripledFare = fareTripler(12)
+console.log(tripledFare)
 
 function selectDifferentDrivers(arrayOfDrivers, driverSelection) {
     return driverSelection(arrayOfDrivers);
